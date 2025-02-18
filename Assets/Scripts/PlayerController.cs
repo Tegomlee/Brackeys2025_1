@@ -12,7 +12,16 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        // Decide the movement direction
+        ProcessPlayerInputs();
+    }
+
+    private void FixedUpdate() {
+        MovePlayer();
+    }
+
+    // Decide the movement direction based on player inputs
+    private void ProcessPlayerInputs(){
+        
         float horizontalMovement;
         float verticalMovement;
         
@@ -22,8 +31,9 @@ public class PlayerController : MonoBehaviour
         movementDirection = new Vector3(horizontalMovement, verticalMovement).normalized;
     }
 
-    private void FixedUpdate() {
-        // Apply the movement in direction & with playerSpeed
+    // Apply the movement in direction & with playerSpeed
+    private void MovePlayer() {
+        
         rb.linearVelocity = movementDirection*playerSpeed;
     }
 }
