@@ -272,7 +272,13 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      red_guard sprite sheet_0: 1563397098828413040
+      red_guard sprite sheet_1: -2040876111280967093
+      red_guard sprite sheet_2: 5247343414041252260
+      red_guard sprite sheet_3: -688809609283990011
+      red_guard sprite sheet_4: -1494089580542632533
+      red_guard sprite sheet_5: 5732258411493809149
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
