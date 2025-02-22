@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour
     private Vector3 movementDirection;
     private Rigidbody2D rb;
     private Animator animator;
+    public bool phonetrigger;
 
     private bool isGrounded = false;
 
@@ -65,13 +66,30 @@ public class PlayerController : MonoBehaviour
         if(collision.gameObject.layer != 3){
             isGrounded = true;
         }
+        if(collision.gameObject.CompareTag("phonetrigger") == true)
+        {
+            phonetrigger = true;
+        }
+    }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.gameObject.layer != 3  && collision.gameObject.CompareTag("floor") == true)
+        {
+            isGrounded = true;
+        }
     }
 
     void OnTriggerExit2D(Collider2D collision)
     {
         // Exclude the player layer to avoid self collision trigger
-        if(collision.gameObject.layer != 3){
+        if(collision.gameObject.layer != 3 && collision.gameObject.CompareTag("floor") == true)
+        {
             isGrounded = false;
+        }
+        if (collision.gameObject.CompareTag("phonetrigger") == true)
+        {
+            phonetrigger = false;
         }
     }
 }

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 3c3c537f726201d4387caf6ea3b38b79
+guid: d610855b3d195804aa32ac1826406055
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2696992199552798337
-    second: floor tile_0
+      213: 834291847495671555
+    second: skyBackground_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: floor tile_0
+      name: skyBackground_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 396
-        height: 31
+        width: 180
+        height: 90
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f71f7af32eb529ad0800000000000000
-      internalID: -2696992199552798337
+      spriteID: 30fdbf8d300049b00800000000000000
+      internalID: 834291847495671555
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      floor tile_0: -2696992199552798337
+      skyBackground_0: 834291847495671555
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
